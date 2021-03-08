@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <table>
+            <tr>
+                <th>Amount <br/>
+                    <input type="text" id="amount" >
+                </th>
+                <th>From Currency <br/>
+                    <select id="fromCurrency">
+                        <option value="vn">VietNam</option>
+                        <option value="nb">Nhật Bản</option>
+                        <option value="pl">Philippine</option>
+                    </select>
+                </th>
+                <th>To Currency <br/>
+                    <select id="toCurrency">
+                        <option value="23">USD</option>
+                        <option value="11">Nhật Bản</option>
+                        <option value="4">Philippine</option>
+                    </select>
+                </th>
+                <th></th>
+                <th></th>
+                <th><input style="background-color: blue; padding-top: 5px" value="Convert" onclick="function1()"></th>
+            </tr>
+            <tr>
+
+            </tr>
+        </table>
+
+<div id="display"></div>
+
+</body>
+<script>
+    function  function1(){
+
+
+        let a = document.getElementById('amount').value
+
+        let b = document.getElementById('toCurrency').value;
+        let total = a * b
+
+        document.getElementById("display").innerText = a + 'chuyển đổi thành ' + total
+
+   }
+</script>
+</html>
