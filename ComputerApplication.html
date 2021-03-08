@@ -20,25 +20,32 @@
         let a = document.getElementById("caculator").value;
         let b = document.getElementById("caculator1").value;
         let result = parseFloat(a) + parseFloat(b);
-        document.getElementById("show").innerText = "Result(+) là: " + result
+        let result1 = parseFloat(a) - parseFloat(b);
+        let result2 = parseFloat(a) * parseFloat(b);
+        let result3 = parseFloat(a) / parseFloat(b);
+        document.getElementById("cong").innerText = "Result(+) là: " + result
+        document.getElementById("tru").innerText = "Result(-) là: " + result1
+        document.getElementById("nhan").innerText = "Result(*) là: " + result2
+        document.getElementById("chia").innerText = "Result(/) là: " + result3
     }
-    function tru(){
-        let a = document.getElementById("caculator").value;
-        let b = document.getElementById("caculator1").value;
-        let result = parseFloat(a) - parseFloat(b);
-        document.getElementById("show").innerText = "Result(-) là: " + result
-    }
-    function nhan(){
-        let a = document.getElementById("caculator").value;
-        let b = document.getElementById("caculator1").value;
-        let result = parseFloat(a) * parseFloat(b);
-        document.getElementById("show").innerText = "Result(*) là: " + result
-    }
-    function chia(){
-        let a = document.getElementById("caculator").value;
-        let b = document.getElementById("caculator1").value;
-        let result = parseFloat(a) / parseFloat(b);
-        document.getElementById("show").innerText = "Result(/) là: " + result
-    }
+    // function tru(){
+    //     let a = document.getElementById("caculator").value;
+    //     let b = document.getElementById("caculator1").value;
+    //     let result = parseFloat(a) - parseFloat(b);
+    //
+    //     document.getElementById("show").innerText = "Result(-) là: " + result
+    // }
+    // function nhan(){
+    //     let a = document.getElementById("caculator").value;
+    //     let b = document.getElementById("caculator1").value;
+    //     let result = parseFloat(a) * parseFloat(b);
+    //     document.getElementById("show").innerText = "Result(*) là: " + result
+    // }
+    // function chia(){
+    //     let a = document.getElementById("caculator").value;
+    //     let b = document.getElementById("caculator1").value;
+    //     let result = parseFloat(a) / parseFloat(b);
+    //     document.getElementById("show").innerText = "Result(/) là: " + result
+    // }
 </script>
 </html>
